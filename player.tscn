@@ -1,7 +1,10 @@
-[gd_scene load_steps=3 format=3 uid="uid://bprba1n2sj6lk"]
+[gd_scene load_steps=4 format=3 uid="uid://c1ftvjs0j2ikk"]
 
 [ext_resource type="Script" path="res://Player.cs" id="1_hp13s"]
 [ext_resource type="Texture2D" uid="uid://bqp2qk02rit11" path="res://cyclone.svg" id="1_qbdln"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_c5eeh"]
+radius = 97.3088
 
 [node name="player" type="Node2D"]
 script = ExtResource("1_hp13s")
@@ -10,3 +13,8 @@ script = ExtResource("1_hp13s")
 z_index = 12
 position = Vector2(-3, -3)
 texture = ExtResource("1_qbdln")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("CircleShape2D_c5eeh")

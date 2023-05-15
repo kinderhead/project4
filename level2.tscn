@@ -1,22 +1,20 @@
-[gd_scene load_steps=7 format=3 uid="uid://c2tw2raln5ysq"]
+[gd_scene load_steps=6 format=3 uid="uid://dd4b1d4qap4ou"]
 
-[ext_resource type="TileSet" uid="uid://cicfy5qnh2igg" path="res://main.tres" id="1_c4jo6"]
-[ext_resource type="Script" path="res://Level.cs" id="1_emn4p"]
-[ext_resource type="PackedScene" uid="uid://dd4b1d4qap4ou" path="res://level2.tscn" id="2_oylq6"]
-[ext_resource type="PackedScene" uid="uid://c1ftvjs0j2ikk" path="res://player.tscn" id="2_yrcrr"]
-[ext_resource type="PackedScene" uid="uid://bsbe6lct53x6g" path="res://weak_building.tscn" id="4_gfah3"]
-[ext_resource type="PackedScene" uid="uid://0twioo0pj6g5" path="res://ui.tscn" id="4_wv5s0"]
+[ext_resource type="Script" path="res://Level.cs" id="1_g280j"]
+[ext_resource type="PackedScene" uid="uid://c1ftvjs0j2ikk" path="res://player.tscn" id="2_ip8ny"]
+[ext_resource type="PackedScene" uid="uid://0twioo0pj6g5" path="res://ui.tscn" id="3_54sfq"]
+[ext_resource type="PackedScene" uid="uid://bsbe6lct53x6g" path="res://weak_building.tscn" id="4_jibim"]
+[ext_resource type="TileSet" uid="uid://cicfy5qnh2igg" path="res://main.tres" id="5_yjbes"]
 
 [node name="Node2D" type="Node2D" node_paths=PackedStringArray("Camera")]
-script = ExtResource("1_emn4p")
+script = ExtResource("1_g280j")
 Camera = NodePath("Camera2D")
 Size = Vector2(8, 4)
-NextLevel = ExtResource("2_oylq6")
 
 [node name="Camera2D" type="Camera2D" parent="."]
 zoom = Vector2(0.3, 0.3)
 
-[node name="player" parent="." node_paths=PackedStringArray("Level", "Map", "UI") instance=ExtResource("2_yrcrr")]
+[node name="player" parent="." node_paths=PackedStringArray("Level", "Map", "UI") instance=ExtResource("2_ip8ny")]
 z_index = 11
 position = Vector2(149, 341)
 scale = Vector2(5, 5)
@@ -27,23 +25,23 @@ Power = 50.0
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
-[node name="ui" parent="CanvasLayer" instance=ExtResource("4_wv5s0")]
+[node name="ui" parent="CanvasLayer" instance=ExtResource("3_54sfq")]
 size_flags_vertical = 0
 
-[node name="weak building" parent="." instance=ExtResource("4_gfah3")]
+[node name="weak building" parent="." instance=ExtResource("4_jibim")]
 z_index = 10
 position = Vector2(-1563, -270)
 
-[node name="weak building2" parent="." instance=ExtResource("4_gfah3")]
+[node name="weak building2" parent="." instance=ExtResource("4_jibim")]
 z_index = 10
 position = Vector2(-1261, -464)
 
-[node name="weak building3" parent="." instance=ExtResource("4_gfah3")]
+[node name="weak building3" parent="." instance=ExtResource("4_jibim")]
 z_index = 10
 position = Vector2(-1468, -451)
 
 [node name="TileMap" type="TileMap" parent="."]
-tile_set = ExtResource("1_c4jo6")
+tile_set = ExtResource("5_yjbes")
 format = 2
 layer_0/name = "Ground"
 layer_0/z_index = 1

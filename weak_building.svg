@@ -7,8 +7,11 @@
    viewBox="0 0 67.733332 67.733333"
    version="1.1"
    id="svg1645"
-   inkscape:version="1.2.2 (732a01da63, 2022-12-09)"
+   inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
    sodipodi:docname="weak_building.svg"
+   inkscape:export-filename="weak_building.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
@@ -24,19 +27,57 @@
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="mm"
      showgrid="false"
-     inkscape:zoom="2.9540685"
-     inkscape:cx="99.693018"
-     inkscape:cy="129.31318"
-     inkscape:window-width="1920"
-     inkscape:window-height="1009"
-     inkscape:window-x="-8"
-     inkscape:window-y="39"
+     inkscape:zoom="2.5912244"
+     inkscape:cx="59.045446"
+     inkscape:cy="126.58109"
+     inkscape:window-width="1503"
+     inkscape:window-height="934"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
      inkscape:window-maximized="1"
-     inkscape:current-layer="layer1" />
+     inkscape:current-layer="layer1"
+     showguides="false" />
   <defs
-     id="defs1642" />
+     id="defs1642">
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="0 : 33.866667 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_z="67.733332 : 33.866667 : 1"
+       inkscape:persp3d-origin="33.866666 : 22.577778 : 1"
+       id="perspective272" />
+  </defs>
   <g
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
-     id="layer1" />
+     id="layer1">
+    <rect
+       style="fill:#784421;stroke-width:0.264583"
+       id="rect208"
+       width="1.9286182"
+       height="16.874117"
+       x="18.232849"
+       y="51.231026" />
+    <rect
+       style="fill:#784421;stroke-width:0.264583"
+       id="rect208-3"
+       width="1.9286182"
+       height="16.874117"
+       x="52.564175"
+       y="51.230999" />
+    <path
+       id="path461"
+       style="fill:#784421;stroke-width:0.264583"
+       inkscape:transform-center-x="0.0091334427"
+       inkscape:transform-center-y="-3.964487"
+       d="m 18.084325,51.50265 c 0,0 9.865761,-10.072285 18.03216,-10.088455 8.091423,-0.01602 18.399746,9.878242 18.399746,9.878242 z"
+       sodipodi:nodetypes="cscc" />
+    <rect
+       style="fill:#c87137;stroke-width:0.264583"
+       id="rect616"
+       width="32.99744"
+       height="17.091944"
+       x="19.807499"
+       y="51.273781" />
+  </g>
 </svg>

@@ -38,8 +38,8 @@ public partial class Player : Node2D
 	public override void _Ready()
 	{
 		Position = ((Position / 256).Floor() * 256) + new Vector2(128, 128);
-		CategoryLabel = UI.GetChild<Label>(0);
-	}
+		CategoryLabel = UI.GetNode<Label>("categorycontainer/category");
+    }
 
 	public override void _Process(double delta)
 	{
@@ -48,14 +48,14 @@ public partial class Player : Node2D
 		Power = Math.Clamp(Power, 0, 100);
 		Scale = new Vector2((float)(Power / 100), (float)(Power / 100)) * 7.5f;
 
-		CategoryLabel.Text = $"Category {GetCategory()} Hurricane";
+    	CategoryLabel.Text = $"Category {GetCategory()} Hurricane";
 
 		Rotate((float)(.5 * delta));
 	}
 
     public override void _Input(InputEvent @event)
     {
-        if (@event is InputEventKey ev)
+        if (!Level.Complete && @event is InputEventKey ev)
 		{
 			if (DoneMoving)
 			{
@@ -76,13 +76,16 @@ public partial class Player : Node2D
 
 	public void ProcessTile()
 	{
-		if (Map.GetCellAtlasCoords(1, GridPos) == new Vector2I(0, 0)) Power -= 5;
+        if (Map.GetCellAtlasCoords(0, GridPos) != new Vector2I(-1, -1)) Power -= 15;
+		else if (Map.GetCellAtlasCoords(1, GridPos) == new Vector2I(0, 0)) Power -= 5;
+
 		if (Map.GetCellAtlasCoords(1, GridPos) == new Vector2I(1, 0))
 		{
 			Power += 10;
 			Map.SetCell(1, GridPos, 1, new(0, 0));
 		}
-	}
+        
+    }
 
 	public int GetCategory()
 	{
