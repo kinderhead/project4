@@ -1,4 +1,4 @@
-[gd_scene format=3 uid="uid://0twioo0pj6g5"]
+[gd_scene format=3 uid="uid://bhsg4bx13g4pw"]
 
 [node name="ui" type="Control"]
 layout_mode = 3
@@ -30,14 +30,14 @@ theme_override_constants/margin_top = 5
 theme_override_constants/margin_right = 5
 theme_override_constants/margin_bottom = 5
 
-[node name="Level done" type="VBoxContainer" parent="complete/MarginContainer"]
+[node name="LevelDone" type="VBoxContainer" parent="complete/MarginContainer"]
 layout_mode = 2
 
-[node name="Label" type="Label" parent="complete/MarginContainer/Level done"]
+[node name="Label" type="Label" parent="complete/MarginContainer/LevelDone"]
 layout_mode = 2
 text = "Level Complete!"
 
-[node name="Button" type="Button" parent="complete/MarginContainer/Level done"]
+[node name="Button" type="Button" parent="complete/MarginContainer/LevelDone"]
 layout_mode = 2
 size_flags_vertical = 8
 text = "Next level"

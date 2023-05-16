@@ -94,7 +94,6 @@ public partial class Player : Node2D
 		if (Power <= 35) return 2;
 		if (Power <= 55) return 3;
 		if (Power <= 75) return 4;
-		if (Power <= 90) return 5;
-		return -1;
+		return 5;
 	}
 }

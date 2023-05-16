@@ -2,10 +2,10 @@
 
 [ext_resource type="TileSet" uid="uid://cicfy5qnh2igg" path="res://main.tres" id="1_c4jo6"]
 [ext_resource type="Script" path="res://Level.cs" id="1_emn4p"]
-[ext_resource type="PackedScene" uid="uid://dd4b1d4qap4ou" path="res://level2.tscn" id="2_oylq6"]
+[ext_resource type="PackedScene" uid="uid://bv2gej6xx26w4" path="res://level2.tscn" id="2_oylq6"]
 [ext_resource type="PackedScene" uid="uid://c1ftvjs0j2ikk" path="res://player.tscn" id="2_yrcrr"]
-[ext_resource type="PackedScene" uid="uid://bsbe6lct53x6g" path="res://weak_building.tscn" id="4_gfah3"]
-[ext_resource type="PackedScene" uid="uid://0twioo0pj6g5" path="res://ui.tscn" id="4_wv5s0"]
+[ext_resource type="PackedScene" uid="uid://b2dr00u4227em" path="res://weak_building.tscn" id="4_gfah3"]
+[ext_resource type="PackedScene" uid="uid://bhsg4bx13g4pw" path="res://ui.tscn" id="4_wv5s0"]
 
 [node name="Node2D" type="Node2D" node_paths=PackedStringArray("Camera")]
 script = ExtResource("1_emn4p")
@@ -31,18 +31,16 @@ Power = 50.0
 size_flags_vertical = 0
 
 [node name="weak building" parent="." instance=ExtResource("4_gfah3")]
-z_index = 10
 position = Vector2(-1563, -270)
 
 [node name="weak building2" parent="." instance=ExtResource("4_gfah3")]
-z_index = 10
 position = Vector2(-1261, -464)
 
 [node name="weak building3" parent="." instance=ExtResource("4_gfah3")]
-z_index = 10
 position = Vector2(-1468, -451)
 
 [node name="TileMap" type="TileMap" parent="."]
+z_index = -1
 tile_set = ExtResource("1_c4jo6")
 format = 2
 layer_0/name = "Ground"
@@ -55,3 +53,37 @@ layer_1/y_sort_enabled = false
 layer_1/y_sort_origin = 0
 layer_1/z_index = 0
 layer_1/tile_data = PackedInt32Array(-262153, 1, 0, -196617, 1, 0, -131081, 1, 0, -65545, 1, 0, -9, 1, 0, 65527, 1, 0, 131063, 1, 0, 196599, 1, 0, 262135, 1, 0, 327671, 1, 0, 327672, 1, 0, 327673, 1, 0, 327674, 1, 0, 327675, 1, 0, 327676, 1, 0, 327677, 1, 0, 327678, 1, 0, 327679, 1, 0, 262144, 1, 0, 262145, 1, 0, 262146, 1, 0, 262147, 1, 0, 262148, 1, 0, 262149, 1, 0, 262150, 1, 0, 262151, 1, 0, 196615, 1, 0, 131079, 1, 0, 65543, 1, 0, 7, 1, 0, -65529, 1, 0, -131065, 1, 0, -196601, 1, 0, -262137, 1, 0, -327673, 1, 0, -327674, 1, 0, -327675, 1, 0, -327676, 1, 0, -327677, 1, 0, -327678, 1, 0, -327679, 1, 0, -327680, 1, 0, -262145, 1, 0, -262146, 1, 0, -262147, 1, 0, -262148, 1, 0, -262149, 1, 0, -262150, 1, 0, -262151, 1, 0, -262152, 1, 0, -196616, 1, 0, -131080, 1, 0, -65544, 1, 0, -8, 1, 0, 65528, 1, 0, 131064, 1, 0, 196600, 1, 0, 262136, 1, 0, 262137, 1, 0, 262138, 1, 0, 262139, 1, 0, 262140, 1, 0, 262141, 1, 0, 262142, 1, 0, 262143, 1, 0, 196608, 1, 0, 196609, 1, 0, 196610, 1, 0, 196611, 1, 0, 196612, 1, 0, 196613, 1, 0, 131077, 1, 0, 131078, 1, 0, 196614, 1, 0, -4, 1, 0, -65540, 1, 0, -131076, 1, 0, -196612, 1, 0, -196613, 1, 0, -196614, 1, 0, -196615, 1, 0, -131079, 1, 0, -65543, 1, 0, -7, 1, 0, 65529, 1, 0, 131065, 1, 0, 196601, 1, 0, 196602, 1, 0, 131066, 1, 0, 65530, 1, 0, -6, 1, 0, -65542, 1, 0, -131078, 1, 0, -131077, 1, 0, -65541, 1, 0, -5, 1, 0, 65531, 1, 0, 131067, 1, 0, 196603, 1, 0, 196604, 1, 0, 131068, 65537, 0, 65532, 65537, 0, 65533, 65537, 0, -3, 1, 0, -65539, 1, 0, -131075, 1, 0, -196611, 1, 0, -196610, 1, 0, -131074, 1, 0, -65538, 1, 0, -2, 1, 0, 65534, 1, 0, 131070, 1, 0, 131069, 65537, 0, 196605, 1, 0, 196606, 1, 0, 196607, 1, 0, 131071, 1, 0, 65535, 1, 0, -1, 1, 0, -65537, 1, 0, -131073, 1, 0, -196609, 1, 0, -262144, 1, 0, -196608, 1, 0, -131072, 1, 0, -65536, 1, 0, 0, 1, 0, 65536, 1, 0, 131072, 1, 0, 131073, 1, 0, 65537, 1, 0, 1, 1, 0, -65535, 1, 0, -131071, 1, 0, -196607, 1, 0, -262143, 1, 0, -262142, 1, 0, -196606, 1, 0, -131070, 1, 0, -65534, 1, 0, 2, 1, 0, 65538, 1, 0, 131074, 1, 0, 131075, 1, 0, 65539, 1, 0, 3, 1, 0, -65533, 1, 0, -131069, 1, 0, -196605, 1, 0, -262141, 1, 0, -262140, 1, 0, -196604, 1, 0, -131068, 1, 0, -65532, 1, 0, 4, 1, 0, 65540, 1, 0, 131076, 1, 0, 65541, 1, 0, 5, 1, 0, -65531, 1, 0, -131067, 1, 0, -196603, 1, 0, -262139, 1, 0, -262138, 1, 0, -196602, 1, 0, -131066, 1, 0, -65530, 1, 0, 6, 1, 0, 65542, 1, 0)
+
+[node name="Label" type="Label" parent="."]
+offset_left = 700.0
+offset_top = -1037.0
+offset_right = 1744.0
+offset_bottom = -57.0
+theme_override_font_sizes/font_size = 100
+text = "Use W, S, A, and D
+to move. Move over
+the warm water to
+gain power. If you
+move over cold water
+or land you will lose
+power. If you
+dissipate into a tropical
+storm you lose.
+
+Normal North Atlantic
+hurricanes move west
+and north, but you can
+move anywhere"
+
+[node name="Label2" type="Label" parent="."]
+offset_left = -1735.0
+offset_top = 170.0
+offset_right = -554.0
+offset_bottom = 2130.0
+theme_override_font_sizes/font_size = 100
+text = "These are weak houses.
+They don't have
+strong foundations
+and are easily destroyed
+by weak storm surges
+and winds."

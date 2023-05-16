@@ -20,20 +20,18 @@ public partial class Level : Node2D
 
     public override void _Ready()
 	{
-		
+		GetNode<Button>("CanvasLayer/ui/complete/MarginContainer/LevelDone/Button").ButtonDown += () =>
+        {
+            GetTree().ChangeSceneToPacked(NextLevel);
+        };
 	}
 
 	public override void _Process(double delta)
 	{
         if (RemainingBuildings <= 0)
         {
-            GD.Print("Done");
             Complete = true;
             GetNode<Control>("CanvasLayer/ui/complete").Visible = true;
-            GetNode<Button>("CanvasLayer/ui/complete/MarginContainer/Level done/Button").ButtonDown += () =>
-            {
-                GetTree().ChangeSceneToPacked(NextLevel);
-            };
         }
 	}
 }
