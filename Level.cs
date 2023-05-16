@@ -31,7 +31,14 @@ public partial class Level : Node2D
         if (RemainingBuildings <= 0)
         {
             Complete = true;
-            GetNode<Control>("CanvasLayer/ui/complete").Visible = true;
+            if (NextLevel == null)
+            {
+                GetNode<Control>("CanvasLayer/ui/gamedone").Visible = true;
+            }
+            else
+            {
+                GetNode<Control>("CanvasLayer/ui/complete").Visible = true;
+            }
         }
 	}
 }

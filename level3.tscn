@@ -1,6 +1,7 @@
-[gd_scene load_steps=8 format=3 uid="uid://c1pklyml8toa6"]
+[gd_scene load_steps=9 format=3 uid="uid://c1pklyml8toa6"]
 
 [ext_resource type="Script" path="res://Level.cs" id="1_hodbs"]
+[ext_resource type="PackedScene" uid="uid://c56laau6bh0c1" path="res://level4.tscn" id="2_e84vp"]
 [ext_resource type="PackedScene" uid="uid://c1ftvjs0j2ikk" path="res://player.tscn" id="2_v7i14"]
 [ext_resource type="PackedScene" uid="uid://bhsg4bx13g4pw" path="res://ui.tscn" id="3_6h354"]
 [ext_resource type="PackedScene" uid="uid://b2dr00u4227em" path="res://weak_building.tscn" id="4_bj1p7"]
@@ -12,6 +13,7 @@
 script = ExtResource("1_hodbs")
 Camera = NodePath("Camera2D")
 Size = Vector2(14, 7)
+NextLevel = ExtResource("2_e84vp")
 
 [node name="Camera2D" type="Camera2D" parent="."]
 zoom = Vector2(0.15, 0.15)
